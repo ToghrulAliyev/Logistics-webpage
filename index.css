@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Poppins&display=swap");
+
+:root {
+  --color-primary: #0c30ef;
+  --color-secondary: #1c1a1a;
+  --color-accent: #ffa500;
+  --secondary-white: #fdf8f2;
+  --primary-gray: #f4f6f6;
+  --section-backg: #eae7ff;
+  --title-size: 3.125rem;
+}
+
+/* RESET CSS start*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background: white;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.select-style {
+  padding: 0;
+  margin: 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: var(--primary-gray);
+}
+.select-style select {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.select-style select option {
+  /* Styles for the option elements */
+  background-color: var(--primary-gray) !important;
+  color: var(--secondary-white) !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+.select-style select:focus option {
+  /* Styles for focused option elements */
+  background-color: var(--primary-gray) !important;
+
+  color: var(--secondary-gray) !important;
+}
+.select-style select:focus {
+  outline: none;
+}
+
+/* RESET CSS end*/
+
+/* <!---------------------------------------->  */
+
+/* Helper CSS start*/
+
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.gap-05 {
+  gap: 0.5rem;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.text-center {
+  text-align: center;
+}
+/* Helper CSS end */
+
+/* <!---------------------------------------->  */
+
+/* Main Page */
+
+.button--secondary {
+  background-color: var(--color-secondary);
+  color: var(--secondary-white);
+  height: 2.625rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+}
+.page--title{
+    font-size: var(--title-size);
+    line-height: 3.75rem;
+    font-weight: 500;
+    text-align: center;
+}
+.page--description {
+    margin-top: 2rem;
+    width: 40rem;
+    line-height: 1.375rem;
+    text-align: center;
+  }
+
+
+.navbar_conatiner {
+  max-width: 1131px;
+  margin: auto;
+  padding: 2rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+#hero {
+  height: 70vh;
+  background-image: url(/public/images/backgroundImg.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  max-width: 2000px;
+  max-height: 900px;
+  margin: auto;
+}
+.hero-background {
+  max-width: 1131px;
+  margin: auto;
+}
+.hero_container {
+  padding: 2rem 0;
+  width: 26rem;
+  position: relative;
+  z-index: 3;
+}
+.hero--title {
+  font-size: var(--title-size);
+  line-height: 3.75rem;
+}
+
+.hero_image-container {
+  width: calc(1248px - 100px);
+  height: calc(846px - 100px);
+  right: -100px;
+  top: -5rem;
+}
+.hero--image {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  background-color: var(--section-backg);
+}
+.main_conatiner {
+  max-width: 1131px;
+  margin: auto;
+  padding-top: 4rem;
+}
+.main--title {
+  font-size: var(--title-size);
+  width: 56rem;
+  font-weight: 500;
+}
+
+.main_video-container {
+  width: 100%;
+  height: 25rem;
+  border-radius: 1.563rem;
+
+  margin-top: 2rem;
+  overflow: hidden;
+}
+.main--video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main_card-container{
+    width: 100%;
+    margin: 5rem 0;
+}
+.main--card{
+    border-radius: 1.5rem;
+    padding: 1.875rem;
+    background-color: var(--color-primary);
+    width: 32%;
+    height: 8rem;
+    color: var(--secondary-white);
+}
+.process_container{
+    margin: 4rem auto;
+    max-width: 1131px;
+    width: 100%;
+}
+.process--title{
+    font-size: var(--title-size);
+    margin-bottom: 2rem;
+}
+.process_image-container{
+    width: 33.75rem;
+    height: 31.063rem;
+}
+.process-image{
+    width: 100%;
+    height: 100%;
+}
+.process--number{
+    width: 3.688rem;
+    height: 3.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--color-primary);
+    color: var(--secondary-white);
+    font-weight: 600;
+}
+
+#faq{
+    background-color: var(--section-backg);
+}
+.faq_container{
+    padding-top: 2rem;
+}
+
+/* Media Queries */
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* Large Devices, Desktops */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+
+/* Extra Large Devices, Large Desktops */
+@media only screen and (min-width: 1201px) {
+  /* Styles for extra large devices */
+}

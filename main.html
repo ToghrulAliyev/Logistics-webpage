@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyGrandWay</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="navbar" class="navbar_conatiner flex items-center justify-between">
+      <div>
+        <img src="/public/svgs/Logo.svg" alt="" />
+      </div>
+      <div class="navbar_navitems flex gap-1">
+        <div class="select-style">
+          <select name="language">
+            <option value="rus">RUS</option>
+            <option value="aze">AZE</option>
+            <option value="eng">ENG</option>
+          </select>
+        </div>
+        <button class="button--secondary">Скачать</button>
+        <button class="button--secondary flex items-center">
+          Оставить заявку <img src="public/svgs/rightArrow.svg" />
+        </button>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+
+    <div id="hero">
+      <div class="hero-background relative">
+        <div class="hero_container flex flex-col gap-1">
+          <h1 class="hero--title">
+            Initiate a New Era in International Freight Transport!
+          </h1>
+          <div class="flex gap-1">
+            <button class="button--secondary">
+              <img src="/public/svgs/app.svg" alt="" />
+            </button>
+            <button class="button--secondary">
+              <img src="/public/svgs/play.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="hero_image-container absolute">
+          <img
+            class="hero--image"
+            src="/public/images/truck.png"
+            alt="hero-image"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Section -->
+    <div id="main">
+      <div class="main_conatiner flex flex-col items-center">
+        <h1 class="page--title">
+          Основные Преимущества Приложения
+        </h1>
+        <p class="page--description">
+          Приложение - революция в транспорте: водителям работа, компаниям
+          грузоперевозки, предпринимателям удобство. Быстро и эффективно.
+        </p>
+        <div class="main_video-container">
+          <video
+            class="main--video"
+            src="/public/images/stockvideo.mp4"
+            controls
+            muted
+          ></video>
+        </div>
+        <div class="main_card-container flex gap-1">
+          <div class="main--card flex flex-col justify-between">
+            <div class="card-logo">
+              <img src="/public/svgs/truck.svg" alt="" />
+            </div>
+            <p class="card-description">
+              Возможности работы для водителей грузовиков
+            </p>
+          </div>
+          <div class="main--card flex flex-col justify-between">
+            <div class="card-logo">
+              <img src="/public/svgs/location.svg" alt="" />
+            </div>
+            <p class="card-description">
+              Надежные грузоперевозки для компаний.
+            </p>
+          </div>
+          <div class="main--card flex flex-col justify-between">
+            <div class="card-logo">
+              <img src="/public/svgs/setting.svg" alt="" />
+            </div>
+            <p class="card-description">
+              Удобная настройка доставки для предпринимателей.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Process Section -->
+    <div id="process" class="process_container">
+      <h1 class="page--title">Простой и понятный процесс</h1>
+      <div class="flex justify-between">
+        <div class="flex items-center">
+          <div class="flex flex-col gap-2">
+            <div class="flex gap-1 items-center">
+              <div class="process--number flex-center">1</div>
+              <div class="flex flex-col gap-1">
+                <h3>Поиск Работы:</h3>
+                <p>Водители находят заказы в несколько кликов.</p>
+              </div>
+            </div>
+            <div class="flex gap-1 items-center">
+              <div class="process--number flex-center">2</div>
+              <div class="flex flex-col gap-1">
+                <h3>Поиск Работы:</h3>
+                <p>Водители находят заказы в несколько кликов.</p>
+              </div>
+            </div>
+            <div class="flex gap-1 items-center">
+              <div class="process--number flex-center">3</div>
+              <div class="flex flex-col gap-1">
+                <h3>Поиск Работы:</h3>
+                <p>Водители находят заказы в несколько кликов.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="process_image-container">
+          <img
+            class="process-image"
+            src="public/images/processimg.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div id="faq">
+        <div class="faq_container">
+            <h1 class="page--title">Часто Задаваемые Вопросы (FAQ):</h1>
+            <p class="page--description">Мы рады ответить на ваши вопросы</p>
+        </div>
+    </div>
+  </body>
+</html>
+
++
