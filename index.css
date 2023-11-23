@@ -689,7 +689,7 @@ table {
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .hero_image-container {
     width: calc(788px - 100px);
-    height: calc(716px - 100px);
+    height: calc(644px - 100px);
     right: 28px;
     top: 1rem;
   }
@@ -699,7 +699,7 @@ table {
 @media only screen and (min-width: 1025px) and (max-width: 1201px)  {
   .hero_image-container {
     width: calc(888px - 100px);
-    height: calc(716px - 100px);
+    height: calc(644px - 100px);
     right: 28px;
     top: 1rem;
   }
@@ -709,7 +709,7 @@ table {
 @media only screen and (min-width: 1201px) {
   .hero_image-container {
     width: calc(1148px - 100px);
-    height: calc(816px - 100px);
+    height: calc(756px - 100px);
     right: -10px;
     
   }
@@ -717,7 +717,7 @@ table {
 @media only screen and (min-width: 1426px) {
   .hero_image-container {
     width: calc(1148px - 100px);
-    height: calc(856px - 100px);
+    height: calc(756px - 100px);
     right: -150px;
     
   }
