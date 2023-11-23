@@ -2,15 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
     <title>MyGrandWay</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <!-- Navbar -->
     <div id="navbar" class="navbar_conatiner flex items-center justify-between">
-      <div>
-        <img src="/public/svgs/Logo.svg" alt="" />
+      <div class="navbar_logo-container">
+        <img class="navbar-logo" src="/public/svgs/Logo.svg" alt="" />
       </div>
       <div class="navbar_navitems flex gap-1">
         <div class="select-style">
@@ -20,10 +21,10 @@
             <option value="eng">ENG</option>
           </select>
         </div>
-        <button class="button--secondary">Скачать</button>
-        <button class="button--secondary flex items-center">
+        <a href="#" class="button--secondary flex-center">Скачать</a>
+        <a href="#" class="send-appl button--secondary flex-center">
           Оставить заявку <img src="public/svgs/rightArrow.svg" />
-        </button>
+        </a>
       </div>
     </div>
 
@@ -36,12 +37,12 @@
             Initiate a New Era in International Freight Transport!
           </h1>
           <div class="flex gap-1">
-            <button class="button--secondary">
+            <a href="#" class="button--secondary flex items-center">
               <img src="/public/svgs/app.svg" alt="" />
-            </button>
-            <button class="button--secondary">
+            </a>
+            <a href="#" class="button--secondary flex items-center">
               <img src="/public/svgs/play.svg" alt="" />
-            </button>
+            </a>
           </div>
         </div>
         <div class="hero_image-container absolute">
@@ -58,11 +59,9 @@
     <!-- Main Section -->
     <div id="main">
       <div class="main_conatiner flex flex-col items-center">
-        <h1 class="page--title">
-          Основные Преимущества Приложения
-        </h1>
+        <h1 class="page--title">Основные Преимущества Приложения</h1>
         <p class="page--description">
-          Приложение - революция в транспорте: водителям работа, компаниям
+          Приложение - революция в транспорте: водителям работа, компаниям <br>
           грузоперевозки, предпринимателям удобство. Быстро и эффективно.
         </p>
         <div class="main_video-container">
@@ -103,8 +102,8 @@
     </div>
     <!-- Process Section -->
     <div id="process" class="process_container">
-      <h1 class="page--title">Простой и понятный процесс</h1>
-      <div class="flex justify-between">
+      <h1 class="page--title-process">Простой и понятный процесс</h1>
+      <div class="process_flow flex justify-between">
         <div class="flex items-center">
           <div class="flex flex-col gap-2">
             <div class="flex gap-1 items-center">
@@ -130,6 +129,7 @@
             </div>
           </div>
         </div>
+        <h1 class="page--title-mobile">Простой и понятный процесс</h1>
         <div class="process_image-container">
           <img
             class="process-image"
@@ -142,12 +142,172 @@
 
     <!-- FAQ -->
     <div id="faq">
-        <div class="faq_container">
-            <h1 class="page--title">Часто Задаваемые Вопросы (FAQ):</h1>
-            <p class="page--description">Мы рады ответить на ваши вопросы</p>
+      <div class="faq_container flex flex-col items-center">
+        <h1 class="page--title">Часто Задаваемые Вопросы (FAQ):</h1>
+        <p class="page--description">Мы рады ответить на ваши вопросы</p>
+        <div class="faq_questions flex justify-between gap-2">
+          <div class="faq_image--container">
+            <img
+              class="faq_image"
+              src="/public/images/phone.png"
+              alt="faq questions"
+            />
+          </div>
+          <div class="faq_questioncard--container flex flex-col gap-1-5">
+            <div class="question--card flex items-center justify-between">
+              <p class="question--card-questions">
+                Как начать использовать приложение для поиска работы водителем?
+              </p>
+              <div class="process--number-black flex-center">
+                <img src="/public/svgs/plus.svg" alt="" />
+              </div>
+            </div>
+            <div class="question--card flex items-center justify-between">
+              <p class="question--card-questions">
+                Какие преимущества приложения для <br />
+                компаний, занимающихся <br />
+                грузоперевозками?
+              </p>
+              <div class="process--number-black flex-center">
+                <img src="/public/svgs/plus.svg" alt="" />
+              </div>
+            </div>
+            <div class="question--card flex items-start justify-between">
+              <div style="width: 76%" class="flex flex-col">
+                <p class="question--card-questions">
+                  Как могу быстро организовать перевозку своих грузов?
+                </p>
+                <p
+                  style="margin-top: 1rem; font-size: 14px; width: 100%;"
+                  class="question--card-questions"
+                >
+                  Мы используем проверенные меры безопасности и сотрудничаем
+                  только с надежными перевозчиками и компаниями.
+                </p>
+              </div>
+              <div class="process--number flex-center">
+                <img src="/public/svgs/cancel.svg" alt="" />
+              </div>
+            </div>
+            <div class="question--card flex items-center justify-between">
+              <p class="question--card-questions">
+                Как связаться с службой поддержки в случае возникновения
+                проблем?
+              </p>
+              <div class="process--number-black flex-center">
+                <img src="/public/svgs/plus.svg" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+
+    <!-- Contact Section -->
+
+    <div id="contact" class="contact_container">
+      <div class="contact-flow flex justify-between">
+        <div class="contact_text-section flex flex-col gap-1-5">
+          <h1 class="contact_header">
+            Оставьте 
+            заявку
+          </h1>
+          <p class="contact_description">
+            Если у вас есть вопросы, предложения или вам нужна помощь, оставьте
+            заявку, и наша команда свяжется с вами в кратчайшие сроки. Ваши
+            комментарии важны для нас, и мы готовы предоставить вам необходимую
+            поддержку.
+          </p>
+        </div>
+        <div class="contact_form">
+          <form id="form" class="flex flex-col gap-1">
+            <input
+              class="contact_input"
+              type="text"
+              name="name"
+              placeholder="Ваше имя"
+            />
+            <input
+              class="contact_input"
+              type="text"
+              name="phone"
+              id=""
+              placeholder="Номер телефона"
+            />
+            <button
+              style="width: fit-content"
+              class="button--secondary"
+              type="submit"
+            >
+              Оставить заявку
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer" class="footer">
+      <div class="footer_container flex flex-col ">
+        <div class="footer_info">
+          <img
+            class="footer_logo"
+            src="public/svgs/logo_yellow.svg"
+            alt="logo"
+          />
+          <div class="footer-flow flex justify-between">
+            
+            <div class="container_info-container flex flex-col gap-1-5">
+              <h2 style="margin-bottom: auto;" class="footer_title">О Нас:</h2>
+              <p class="footer_description">
+                Мы - ваш партнер в сфере грузоперевозок. Наша миссия - обеспечить
+                удобство и надежность в каждой перевозке. С нами ваш груз в
+                безопасных руках.
+              </p>
+              <div class="footer_socials flex items-center gap-1">
+                <a class="footer_social-links" href="#">
+                  <img src="/public/svgs/instagram.svg" alt="instagram" />
+                </a>
+                <a class="footer_social-links" href="#">
+                  <img  src="/public/svgs/linkedin.svg" alt="linkedin" />
+                </a>
+                <a class="footer_social-links" href="#">
+                  <img src="public/svgs/facebook.svg" alt="facebook" />
+                </a>
+              </div>
+            </div>
+              
+            <div class="container_info-container flex flex-col gap-1-5">
+              <h2 class="footer_title">Контакты:</h2>
+              <div class="flex flex-col gap-1-5">
+                <div>
+                  <img src="/public/svgs/email.svg" alt="email-logo">
+                  <span>example@gmail.com</span>
+                 </div>
+                 <div>
+                  <img src="/public/svgs/phone.svg" alt="phone-logo">
+                  <span>+088 (246) 642-27-10</span>
+                 </div>
+              </div>
+            </div>
+
+            <div class="container_info-container flex flex-col gap-1-5">
+              <h2 class="footer_title">Наша политика</h2>
+              <div class="flex flex-col gap-1-5">
+                 
+                  <span>Политика конфиденциальности</span>
+                
+                  
+                  <span>Условия эксплуатации</span>
+                  
+              </div>
+            </div>
+            
+            
+          </div>
+          
+        </div>
+        <div class="footer_copyright text-center"> © 2023 Наша Компания. Все права защищены.</div>
+      </div>
+    </footer>
   </body>
 </html>
-
-+

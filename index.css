@@ -10,6 +10,7 @@
   --title-size: 3.125rem;
 }
 
+
 /* RESET CSS start*/
 
 html, body, div, span, applet, object, iframe,
@@ -31,6 +32,7 @@ time, mark, audio, video {
 
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -40,6 +42,14 @@ body {
   line-height: 1;
   background: white;
   font-family: "Bai Jamjuree", sans-serif;
+}
+*{
+  /* border: 1px solid red !important; */
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
 }
 ol,
 ul {
@@ -120,8 +130,14 @@ table {
   justify-content: center;
   align-items: center;
 }
+.flex-wrap{
+  flex-wrap: wrap;
+}
 .items-center {
   align-items: center;
+}
+.items-start{
+  align-items: start;
 }
 .justify-center {
   justify-content: center;
@@ -129,6 +145,7 @@ table {
 .justify-between {
   justify-content: space-between;
 }
+ 
 .relative {
   position: relative;
 }
@@ -140,6 +157,9 @@ table {
 }
 .gap-1 {
   gap: 1rem;
+}
+.gap-1-5 {
+  gap: 1.5rem;
 }
 .gap-2 {
   gap: 2rem;
@@ -166,9 +186,15 @@ table {
     font-weight: 500;
     text-align: center;
 }
+.page--title-process{
+  font-size: var(--title-size);
+    line-height: 3.75rem;
+    font-weight: 500;
+    text-align: center;
+}
 .page--description {
     margin-top: 2rem;
-    width: 40rem;
+    width: auto;
     line-height: 1.375rem;
     text-align: center;
   }
@@ -177,7 +203,7 @@ table {
 .navbar_conatiner {
   max-width: 1131px;
   margin: auto;
-  padding: 2rem 0;
+  padding: 2rem;
   position: relative;
   z-index: 1;
 }
@@ -191,6 +217,7 @@ table {
   max-width: 2000px;
   max-height: 900px;
   margin: auto;
+  padding: 0 2rem;
 }
 .hero-background {
   max-width: 1131px;
@@ -206,10 +233,12 @@ table {
   font-size: var(--title-size);
   line-height: 3.75rem;
 }
-
+.send-appl{
+  display: flex;
+}
 .hero_image-container {
   width: calc(1248px - 100px);
-  height: calc(846px - 100px);
+  height: calc(836px - 100px);
   right: -100px;
   top: -5rem;
 }
@@ -224,7 +253,7 @@ table {
 .main_conatiner {
   max-width: 1131px;
   margin: auto;
-  padding-top: 4rem;
+  padding: 4rem 2rem 0 2rem;
 }
 .main--title {
   font-size: var(--title-size);
@@ -254,17 +283,21 @@ table {
     padding: 1.875rem;
     background-color: var(--color-primary);
     width: 32%;
-    height: 8rem;
+ 
     color: var(--secondary-white);
 }
 .process_container{
     margin: 4rem auto;
     max-width: 1131px;
     width: 100%;
+    padding: 0 2rem;
 }
 .process--title{
     font-size: var(--title-size);
     margin-bottom: 2rem;
+}
+.page--title-mobile{
+  display: none;
 }
 .process_image-container{
     width: 33.75rem;
@@ -282,33 +315,412 @@ table {
     color: var(--secondary-white);
     font-weight: 600;
 }
+.process--number-black{
+  width: 3.688rem;
+  height: 3.5rem;
+  border-radius: 1.5rem;
+  background-color: var(--color-secondary);
+  color: var(--secondary-white);
+  font-weight: 600;
+}
 
 #faq{
     background-color: var(--section-backg);
 }
 .faq_container{
     padding-top: 2rem;
+    margin: 4rem auto;
+    max-width: 1131px;margin: 4rem auto;
+    max-width: 1131px;
+}
+.faq_questioncard--container{
+  width: 50%;
+}
+.faq_image--container{
+  width: 29.625rem;
+  height: 34.188rem;
+}
+.faq_image{
+  width: 100%;
+  height: 100%;
+}
+.faq_questions{
+  margin-top: 3rem;
+  width: 100%;
+  padding: 0 2rem;
+}
+.question--card{
+  padding: 1rem 1.5rem;
+  background-color: white;
+  border-radius: 1.5rem;
+}
+.spacing-left{
+  margin-left: 1rem;
+}
+.question--card-questions{
+  width: calc(100% - 60px);
+  line-height: 1.5rem;
+ font-size: 17px;
 }
 
+
+.contact_container{
+  margin: 4rem auto;
+  max-width: 1131px;
+  padding: 0 2rem;
+}
+.contact_form{
+  width: 48%;
+  margin-top: 2rem;
+}
+.contact_text-section{
+  width: 48%;
+}
+.contact_header{
+  font-size: 4rem;
+}
+.contact_description{
+  color: #a7a7a7;
+  font-size: 1.125rem;
+  line-height: 1.313rem;
+}
+.contact_input{
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background-color: #e6e6e6;
+  border: none;
+}
 /* Media Queries */
+
+.footer{
+  padding: 2rem 0;
+  background-color: var(--color-primary);
+}
+.footer_container{
+  margin: auto;
+  max-width: 1131px;
+  padding: 3.125rem 0 1rem 0;
+  color: var(--section-backg);
+  padding: 0 2rem;
+}
+.footer_copyright{
+  margin-top: 4rem;
+}
+.footer_title{
+  margin-bottom: 1rem;
+}
+.footer_logo{
+  margin-bottom: 2rem;
+}
+.footer_description{
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+.container_info-container{
+  width: auto;
+}
+.container_info-container:nth-child(1){
+  width: 30%;
+}
+.footer_social-links{
+ display: flex;
+ align-items: center;
+ width: 2rem;
+ height: 2rem;
+}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 600px) {
+  .page--title{
+    font-size: 2rem;
+      line-height: 2.375rem;
+  }
+  .navbar_navitems{
+    margin-left: 1rem;
+  }
+  .navbar-logo{
+    width: 8rem;
+    height: 2rem;
+  }
+  .send-appl{
+    display: none;
+  }
+  .hero_image-container{
+    width: calc(440px - 100px);
+    height: calc(363px - 100px);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .hero_container {
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .hero-background{
+      height: 100%;
+    }
+    .hero--title{
+      font-size: 2rem;
+      line-height: 2.375rem;
+      text-align: center;
+    }
+    .main_card-container{
+      flex-direction: column;
+    }
+    .main--card{
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .card-description{
+      margin-left: 1rem;
+    }
+    .process_flow{
+      flex-direction: column-reverse;
+    }
+    .process_image-container {
+      width: auto;
+      height: auto;
+      margin-bottom: 3rem;
+  }
+  .page--title-process{
+    display: none;
+  }
+  .page--title-mobile{
+    display: block;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .faq_questions{
+    flex-direction: column-reverse;
+  }
+  .faq_questioncard--container{
+    width: 100%;
+  }
+  .faq_image--container{
+    width: auto;
+    height: auto;
+  }
+  .question--card-questions{
+    width: 76%;
+  }
+  .process--number-black{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    color: var(--secondary-white);
+    font-weight: 600;
+  }
+  .process--number {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: var(--secondary-white);
+    font-weight: 600;
+}
+.contact-flow {
+  flex-direction: column;
+}
+.contact_header{
+  font-size: 2rem;
+    line-height: 2.4rem;
+    text-align: center;
+
+}
+.contact_description{
+  text-align: center;
+}
+.contact_text-section{
+  width: 100%;
+}
+.contact_form{
+  width: 100%;
+}
+.contact_input{
+  width: 100%;
+}
+#form{
+ align-items: end;
+}
+.footer-flow{
+  flex-direction: column;
+}
+.container_info-container{
+  margin-bottom: 3rem;
+}
+.container_info-container:nth-child(1){
+  width: 100%;
+}
 }
 
+
 /* Small Devices, Tablets */
+ 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
+  
+  .hero_image-container{
+    display: block;
+    width: calc(488px - 100px);
+    height: calc(416px - 100px);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .hero_container {
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .hero-background{
+      height: 100%;
+    }
+    .hero--title{
+      font-size: 2rem;
+      line-height: 2.375rem;
+      text-align: center;
+    }
+    .main_card-container{
+      flex-direction: column;
+    }
+    .main--card{
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .card-description{
+      margin-left: 1rem;
+    }
+    .process_flow{
+      flex-direction: column-reverse;
+    }
+    .process_image-container {
+      width: auto;
+      height: auto;
+      margin-bottom: 3rem;
+  }
+  .page--title-process{
+    display: none;
+  }
+  .page--title-mobile{
+    display: block;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .faq_questions{
+    flex-direction: column-reverse;
+  }
+  .faq_questioncard--container{
+    width: 100%;
+  }
+  .faq_image--container{
+    width: auto;
+    height: auto;
+  }
+  .question--card-questions{
+    width: 76%;
+  }
+  .process--number-black{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    color: var(--secondary-white);
+    font-weight: 600;
+  }
+  .process--number {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: var(--secondary-white);
+    font-weight: 600;
+}
+.contact-flow {
+  flex-direction: column;
+}
+.contact_header{
+  font-size: 2rem;
+    line-height: 2.4rem;
+    text-align: center;
+
+}
+.contact_description{
+  text-align: center;
+}
+.contact_text-section{
+  width: 100%;
+}
+.contact_form{
+  width: 100%;
+}
+.contact_input{
+  width: 100%;
+}
+#form{
+ align-items: end;
+}
+.footer-flow{
+  flex-direction: column;
+}
+.container_info-container{
+  margin-bottom: 3rem;
+}
+.container_info-container:nth-child(1){
+  width: 100%;
+}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero_image-container {
+    width: calc(788px - 100px);
+    height: calc(716px - 100px);
+    right: 28px;
+    top: 1rem;
+  }
 }
 
 /* Large Devices, Desktops */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+@media only screen and (min-width: 1025px) and (max-width: 1201px)  {
+  .hero_image-container {
+    width: calc(888px - 100px);
+    height: calc(716px - 100px);
+    right: 28px;
+    top: 1rem;
+  }
 }
 
 /* Extra Large Devices, Large Desktops */
 @media only screen and (min-width: 1201px) {
-  /* Styles for extra large devices */
+  .hero_image-container {
+    width: calc(1148px - 100px);
+    height: calc(816px - 100px);
+    right: -10px;
+    
+  }
 }
+@media only screen and (min-width: 1426px) {
+  .hero_image-container {
+    width: calc(1148px - 100px);
+    height: calc(856px - 100px);
+    right: -150px;
+    
+  }
+}
+
+  
